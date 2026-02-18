@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chat | Nexus</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../public/css/style.css">
+</head>
+<body id="chat-page">
+    <nav class="navbar">
+        <div class="container d-flex align-items-center">
+            <a href="feed.html" class="text-dark me-3"><i class="fa-solid fa-arrow-left"></i></a>
+            <span class="fw-bold fs-5" id="chat-partner">...</span>
+        </div>
+    </nav>
+
+    <div class="container mt-4 pt-2" style="max-width: 600px;">
+        <div class="d-flex flex-column" style="height: 85vh;">
+            <div id="chat-box" class="chat-window flex-grow-1 shadow-sm rounded-4 mb-3">
+                </div>
+            
+            <div class="p-3 bg-white border-top rounded-4 shadow-sm">
+                <div class="input-group">
+                    <input type="text" id="chat-input" class="form-control border-0 bg-light rounded-pill p-3" placeholder="Write a message...">
+                    <button class="btn btn-primary rounded-circle ms-2" style="width: 52px; height: 52px;" onclick="sendMessage()">
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../public/js/script.js"></script>
+</body>
+</html>
